@@ -1,31 +1,47 @@
 <!DOCTYPE html>
 
-<html style="font-family: Roboto; background-color: lightblue;">
+<html>
 
 <head>
 
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Home page</title>
+	<title>Home</title>
 	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-	
+	<link href="css/navigation.css" rel="stylesheet">
+	<link href="img/favicon.ico" rel="shortcut icon">
+
 	<style>
 
-	.navLinks {
-		display: inline-block;
-		margin: 3px;
-		background-color: #7f7f7f;
-		color: orange;
-		font-weight: bold;
-		padding: 5px 2vw;
-		border-radius: 3px;
-		text-decoration: none;
+	body {
+		font-family: Roboto, Arial;
+		background-color: lightblue;
 	}
 
-	.navLinks:hover {
-		background-color: orange;
-		color: #7f7f7f;
-		transition: background-color 0.2s, color 0.3s;
+	#mainImage {
+		max-width: 60vw;
+		margin-top: 20px;
+	}
+
+	#mainContent {
+		background-color: white;
+		box-shadow: 5px 5px 15px grey;
+		width: 80vw;
+		margin-left: auto;
+		margin-right: auto;
+		margin-top: 20px;
+		padding: 15px;
+		border-radius: 10px;
+	}
+
+	@media screen and (orientation: portrait) {
+
+	}
+
+	@media screen and (orientation: landscape) {
+		#mainImage {
+			max-width: 40vw;
+		}
 	}
 
 	</style>
@@ -34,28 +50,23 @@
 
 <body style="text-align: center;">
 
-	<h1>Test</h1>
+	<h1>Augmented Reality</h1>
 
 		<a href="#" class="navLinks">Home</a>
 		<a href="#" class="navLinks">History</a>
 		<a href="#" class="navLinks">Future</a>
 		<a href="#" class="navLinks">Safety</a>
 
-	<div style="
-		background-color: white;
-		box-shadow: 5px 5px 15px grey;
-		width: 80vw;
-		margin-left: auto;
-		margin-right: auto;
-		margin-top: 20px;
-		padding: 5px;
-		border-radius: 10px;
-	">
+	<div id="mainContent">
 
-		<img src="https://compass-ssl.surface.com/assets/f5/2a/f52a1f76-0640-4a37-a650-51b0902f8427.jpg?n=Buy_Panel_1920.jpg" style="
-			max-width: 60vw;
-			margin-top: 20px;
-		" title="Test">
+		<img src="https://compass-ssl.surface.com/assets/f5/2a/f52a1f76-0640-4a37-a650-51b0902f8427.jpg?n=Buy_Panel_1920.jpg" title="Test" id="mainImage">
+
+		<p>
+			Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi iaculis volutpat dui, ac placerat nulla feugiat vitae. Morbi luctus tellus ac lacinia pretium. Nunc rhoncus enim ac enim dictum imperdiet. Sed tincidunt quam sit amet quam consectetur, in consectetur eros consequat. Phasellus ac tempus orci. Pellentesque sit amet nisl at velit dapibus feugiat. Nulla tempor lorem sit amet imperdiet rhoncus.
+		</p>
+		<p>
+			Phasellus congue vel massa quis vulputate. In a imperdiet lacus. Suspendisse mattis nulla est, eu luctus ipsum placerat et. Donec venenatis turpis ut diam aliquet, a pharetra nulla rutrum. Nam maximus augue et sapien egestas, a convallis mauris consectetur. Cras sed viverra nunc. Donec quis nulla facilisis, elementum mi in, auctor arcu. Nulla efficitur commodo vestibulum. Pellentesque euismod dolor et condimentum eleifend. Cras eu ultrices tellus. Nunc placerat maximus elit quis mattis. Pellentesque eget luctus eros. Etiam porttitor non urna in rutrum. Nullam dictum ut felis varius facilisis. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Ut dignissim eget odio ac volutpat.
+		</p>
 
 	</div>
 

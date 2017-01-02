@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 
-<html>
+<html lang="en" ng-app="PCHS-Webmaster">
 
 <head>
 
@@ -8,56 +8,29 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Home</title>
 	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-	<link href="css/navigation.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/angular_material/1.1.0-rc2/angular-material.min.css">
+	<link href="css/navigationButtons.css" rel="stylesheet">
+	<link href="css/index.css" rel="stylesheet">
 	<link href="img/favicon.ico" rel="shortcut icon">
-
-	<style>
-
-	body {
-		font-family: Roboto, Arial;
-		background-color: lightblue;
-	}
-
-	#mainImage {
-		max-width: 60vw;
-		margin-top: 20px;
-	}
-
-	#mainContent {
-		background-color: white;
-		box-shadow: 5px 5px 15px grey;
-		width: 80vw;
-		margin-left: auto;
-		margin-right: auto;
-		margin-top: 20px;
-		padding: 15px;
-		border-radius: 10px;
-	}
-
-	@media screen and (orientation: portrait) {
-
-	}
-
-	@media screen and (orientation: landscape) {
-		#mainImage {
-			max-width: 40vw;
-		}
-	}
-
-	</style>
 
 </head>
 
-<body style="text-align: center;">
+<body ng-controller="AppController as AppCtrl">
 
-	<h1>Augmented Reality</h1>
+	<div id="navContainer">
 
-		<a href="#" class="navLinks">Home</a>
-		<a href="#" class="navLinks">History</a>
-		<a href="#" class="navLinks">Future</a>
-		<a href="#" class="navLinks">Safety</a>
+		<h1 id="title">AUGMENTED REALITY</h1>
 
-	<div id="mainContent">
+		<div id="navLinksContainer">
+			<md-button href="index.html" class="navLinks">HOME</md-button>
+			<md-button href="" class="navLinks">HISTORY</md-button>
+			<md-button href="" class="navLinks">FUTURE</md-button>
+			<md-button href="" class="navLinks">SAFETY</md-button>
+		</div>
+
+	</div>
+
+	<md-card id="mainContent">
 
 		<img src="https://compass-ssl.surface.com/assets/f5/2a/f52a1f76-0640-4a37-a650-51b0902f8427.jpg?n=Buy_Panel_1920.jpg" title="Test" id="mainImage">
 
@@ -68,7 +41,17 @@
 			Phasellus congue vel massa quis vulputate. In a imperdiet lacus. Suspendisse mattis nulla est, eu luctus ipsum placerat et. Donec venenatis turpis ut diam aliquet, a pharetra nulla rutrum. Nam maximus augue et sapien egestas, a convallis mauris consectetur. Cras sed viverra nunc. Donec quis nulla facilisis, elementum mi in, auctor arcu. Nulla efficitur commodo vestibulum. Pellentesque euismod dolor et condimentum eleifend. Cras eu ultrices tellus. Nunc placerat maximus elit quis mattis. Pellentesque eget luctus eros. Etiam porttitor non urna in rutrum. Nullam dictum ut felis varius facilisis. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Ut dignissim eget odio ac volutpat.
 		</p>
 
-	</div>
+	</md-card>
+
+
+
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.8/angular-animate.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular-aria.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/angular_material/1.1.0-rc2/angular-material.min.js"></script>
+	<script src="js/app.controller.js"></script>
+	<script src="https://code.jquery.com/jquery-3.0.0.min.js"></script>
+	<script src="js/fadeInOut.js"></script>
 
 </body>
 

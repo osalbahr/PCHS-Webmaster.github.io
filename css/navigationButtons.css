@@ -1,0 +1,108 @@
+#navContainer {
+	background-color: #80c6ff;
+	overflow: hidden;
+	padding: 2vh;
+	height: 10vh;
+}
+
+#navLinksContainer {
+	float: right;
+}
+
+#title {
+	float: left;
+	line-height: 70%;
+	font-weight: bolder !important;
+	text-shadow: 0px 0px 0 #66baff,1px 1px 0 #66baff,2px 2px 0 #66baff,3px 3px 0 #66baff,4px 4px 0 #66baff,5px 5px 0 #66baff,6px 6px 0 #66baff,7px 7px 0 #66baff,8px 8px 0 #66baff,9px 9px 0 #66baff,10px 10px 0 #66baff,11px 11px 0 #66baff,12px 12px 0 #66baff,13px 13px 0 #66baff,14px 14px 0 #66baff,15px 15px 0 #66baff,16px 16px 0 #66baff,17px 17px 0 #66baff,18px 18px 0 #66baff,19px 19px 0 #66baff,20px 20px 0 #66baff,21px 21px 0 #66baff,22px 22px 0 #66baff,23px 23px 0 #66baff,24px 24px 0 #66baff,25px 25px 0 #66baff,26px 26px 0 #66baff,27px 27px 0 #66baff,28px 28px 0 #66baff,29px 29px 0 #66baff,30px 30px 0 #66baff,31px 31px 0 #66baff,32px 32px 0 #66baff,33px 33px 0 #66baff,34px 34px 0 #66baff,35px 35px 0 #66baff,36px 36px 0 #66baff,37px 37px 0 #66baff,38px 38px 0 #66baff,39px 39px 0 #66baff,40px 40px 0 #66baff,41px 41px 0 #66baff, 42px 42px 0 #66baff, 43px 43px 0 #66baff, 44px 44px 0 #66baff, 45px 45px 0 #66baff, 46px 46px 0 #66baff, 47px 47px 0 #66baff, 48px 48px 0 #66baff, 59px 59px 0 #66baff, 50px 50px 0 #66baff,41px 51px 0 #66baff, 52px 52px 0 #66baff, 53px 53px 0 #66baff, 54px 54px 0 #66baff, 55px 55px 0 #66baff, 56px 56px 0 #66baff, 57px 57px 0 #66baff, 58px 58px 0 #66baff, 59px 59px 0 #66baff, 60px 60px 0 transparent;
+}
+
+.navLinks {
+	display: inline-block;
+	margin-left: 0.25rem;
+	margin-right: 0.25rem;
+	padding: 1.5vh 3vw;
+	font-weight: bold !important;
+	border: 1px solid black;
+}
+
+/*
+
+.navLinks {
+	display: inline-block;
+	margin-left: 0.25rem;
+	margin-right: 0.25rem;
+	padding: 1.5vh 3vw;
+	background-color: #7f7f7f;
+	color: orange;
+	font-weight: bold !important;
+	border-radius: 3px;
+	text-decoration: none;
+	font: inherit;
+	border: 0;
+	outline: 0;
+	box-shadow: 0px 7px 0px #6a6a6a;
+	-webkit-transition: 0.2s linear;
+	transition: 0.2s linear;
+}
+
+.navLinks:hover {
+	background-color: orange;
+	box-shadow: 0px 7px 0px #e69500;
+	color: #7f7f7f;
+	border-radius: 7px;
+}
+
+.navLinks:active {
+	box-shadow: 0px 2px 0px #e69500;
+  	-webkit-transform: translateY(5px);
+  	        transform: translateY(5px);
+}
+
+*/
+
+@media screen and (orientation: portrait), screen and (max-width: 850px) {
+
+	#navContainer {
+		text-align: center;
+		overflow: visible;
+		
+		height: auto;
+	}
+
+	#navLinksContainer {
+		float: none;
+	}
+
+	.navLinks {
+		padding: 1.5vh 3vw;
+		font-size: 1.2rem;
+	}
+
+	#title {
+		float: none;
+		line-height: initial;
+		text-shadow: none;
+	}
+}
+
+@media screen and (max-width: 500px) {
+	.navLinks {
+		display: block;
+		margin-bottom: 1.5vh;
+		width: 85vw;
+		margin-left: 50%;
+		-webkit-transform: translateX(-50%);
+		        transform: translateX(-50%);
+	}
+
+	/*
+
+	.navLinks:active {
+		box-shadow: 0px 2px 0px #e69500;
+	  	-webkit-transform: translate(-50%, 5px);
+	  	        transform: translate(-50%, 5px);
+	}
+
+	*/
+
+}

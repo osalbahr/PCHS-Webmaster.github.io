@@ -2,7 +2,7 @@ $(function() {
 
 	$("body").fadeIn(350);
 
-	$(".navLinks").click(function(e) {
+	$(".navLinks, .sideNavLinks").click(function(e) {
 		e.preventDefault();
 		var that = $(this);
 		$("body").fadeOut(250, function() {

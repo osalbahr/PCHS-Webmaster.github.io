@@ -8,7 +8,7 @@ body {
 #landing {
 	font-size: 50px;
 	text-align: center;
-	color: black;
+	color: white;
 	position: fixed;
 	top: 50%;
 	left: 50%;
@@ -17,23 +17,25 @@ body {
 	z-index: 1;
 }
 
-#landingContainer {
+#videoContainer {
 	width: 100vw;
-	height: 100vh;
 	margin-left: 50%;
 	-webkit-transform: translateX(-50%);
 	        transform: translateX(-50%);
 	position: fixed;
 	top: 14vh;
-	background-color: #66baff;
 }
 
-#landingContainer img {
-	margin-left: 50%;
-	-webkit-transform: translateX(-50%);
-	        transform: translateX(-50%);
-	opacity: 0.5;
+#video {
+	width: 100vw;
 	z-index: -1;
+}
+
+#mainImage {
+	max-width: 60vw;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 #mainContent {	
@@ -44,13 +46,6 @@ body {
 	z-index: 5;
 }
 
-#mainImage {
-	max-width: 60vw;
-	display: block;
-	margin-left: auto;
-	margin-right: auto;
-}
-
 @media screen and (orientation: landscape) {
 	#mainImage {
 		max-width: 40vw;
@@ -59,12 +54,13 @@ body {
 
 @media screen and (orientation: portrait), screen and (max-width: 1050px) {
 
-	#landingContainer {
+	#videoContainer {
 		top: calc(68px);
 	}
 
-	#landingContainer img {
+	#video {
 		width: initial;
+		min-width: 100vw;
 		min-height: 100vh;
 	}
 

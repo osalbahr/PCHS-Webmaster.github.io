@@ -21,43 +21,8 @@
 
 <body ng-controller="AppController as AppCtrl" md-swipe-right="openMenu()" md-swipe-left="closeMenu()" ng-cloak>
 
-	<!--TEMPLATE ISN'T WORKING - showing some XHTTP cross origin request idek what's going on !-->
 
-	<div id="navContainer">
-
-		<md-button class="md-icon-button md-ink-ripple" ng-click="openMenu()" id="menuIcon" aria-label="menu button">
-		    <md-icon>
-		    	<svg>
-					<g id="Icon">
-					    <g>
-					        <rect fill="none" width="24" height="24"></rect>
-					        <path d="M3,18h18v-2H3V18z M3,13h18v-2H3V13z M3,6v2h18V6H3z"></path>
-					    </g>
-					</g>
-
-				</svg>
-			</md-icon>
-		</md-button>
-
-		<h1 id="title"><span>PANTHER CREEK HS</span></h1>
-
-		<div id="navLinksContainer">
-			<md-button href="index.html" class="navLinks">HOME</md-button>
-			<md-button href="" class="navLinks">CTE PROGRAM</md-button>
-			<md-button href="" class="navLinks">OUR TSA CHAPTER</md-button>
-			<md-button href="" class="navLinks">AUGMENTED REALITY</md-button>
-		</div>
-
-	</div>
-
-	<md-sidenav md-component-id="left" id="sideNav">
-		<md-content role="navigation">
-			<md-button href="index.html" class="sideNavLinks">HOME</md-button>
-			<md-button href="" class="sideNavLinks">CTE PROGRAM</md-button>
-			<md-button href="" class="sideNavLinks">OUR TSA CHAPTER</md-button>
-			<md-button href="" class="sideNavLinks">AUGMENTED REALITY</md-button>
-		</md-content>
-	</md-sidenav>
+	<ng-include src="'navigation.template.html'"></ng-include>
 
 	<div id="videoContainer">
 
@@ -65,9 +30,11 @@
 			<source src="other/HoloLens.mp4" type="video/mp4">
 		</video>
 
+	<div id="landingContainer">
+		<img src="https://s3-us-west-2.amazonaws.com/scorestream-team-profile-pictures/teamPic116318-26570-10ek0l4.png" width="700" height="600">
 	</div>
 
-	<h1 id="landing">AUGMENTED REALITY</h1>
+	<h1 id="landing">WELCOME</h1>
 
 	<md-card id="mainContent">
 
@@ -88,7 +55,6 @@
 		<p>
 			Phasellus congue vel massa quis vulputate. In a imperdiet lacus. Suspendisse mattis nulla est, eu luctus ipsum placerat et. Donec venenatis turpis ut diam aliquet, a pharetra nulla rutrum. Nam maximus augue et sapien egestas, a convallis mauris consectetur. Cras sed viverra nunc. Donec quis nulla facilisis, elementum mi in, auctor arcu. Nulla efficitur commodo vestibulum. Pellentesque euismod dolor et condimentum eleifend. Cras eu ultrices tellus. Nunc placerat maximus elit quis mattis. Pellentesque eget luctus eros. Etiam porttitor non urna in rutrum. Nullam dictum ut felis varius facilisis. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Ut dignissim eget odio ac volutpat.
 		</p>
-
 	</md-card>
 
 

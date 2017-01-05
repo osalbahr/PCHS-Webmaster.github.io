@@ -6,8 +6,12 @@
 
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<meta name="theme-color" content="#00b8ff">
+
 	<title>Home</title>
-	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,400italic">
 	<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/angular_material/1.1.0-rc2/angular-material.min.css">
 	<link href="css/navigationButtons.css" rel="stylesheet">
 	<link href="css/index.css" rel="stylesheet">
@@ -17,7 +21,43 @@
 
 <body ng-controller="AppController as AppCtrl" md-swipe-right="openMenu()" md-swipe-left="closeMenu()" ng-cloak>
 
-	<ng-include src="'html/navigation.template.html'"></ng-include>
+	<!--TEMPLATE ISN'T WORKING - showing some XHTTP cross origin request idek what's going on !-->
+
+	<div id="navContainer">
+
+		<md-button class="md-icon-button md-ink-ripple" ng-click="openMenu()" id="menuIcon" aria-label="menu button">
+		    <md-icon>
+		    	<svg>
+					<g id="Icon">
+					    <g>
+					        <rect fill="none" width="24" height="24"></rect>
+					        <path d="M3,18h18v-2H3V18z M3,13h18v-2H3V13z M3,6v2h18V6H3z"></path>
+					    </g>
+					</g>
+
+				</svg>
+			</md-icon>
+		</md-button>
+
+		<h1 id="title"><span>PANTHER CREEK HS</span></h1>
+
+		<div id="navLinksContainer">
+			<md-button href="index.html" class="navLinks">HOME</md-button>
+			<md-button href="" class="navLinks">CTE PROGRAM</md-button>
+			<md-button href="" class="navLinks">OUR TSA CHAPTER</md-button>
+			<md-button href="" class="navLinks">AUGMENTED REALITY</md-button>
+		</div>
+
+	</div>
+
+	<md-sidenav md-component-id="left" id="sideNav">
+		<md-content role="navigation">
+			<md-button href="index.html" class="sideNavLinks">HOME</md-button>
+			<md-button href="" class="sideNavLinks">CTE PROGRAM</md-button>
+			<md-button href="" class="sideNavLinks">OUR TSA CHAPTER</md-button>
+			<md-button href="" class="sideNavLinks">AUGMENTED REALITY</md-button>
+		</md-content>
+	</md-sidenav>
 
 	<div id="videoContainer">
 
@@ -31,7 +71,7 @@
 
 	<md-card id="mainContent">
 
-		<img src="https://compass-ssl.surface.com/assets/f5/2a/f52a1f76-0640-4a37-a650-51b0902f8427.jpg?n=Buy_Panel_1920.jpg" title="Test" id="mainImage">
+		<img src="img/hololens-transparent.png" alt="HoloLens" title="Test" id="mainImage">
 
 		<p>
 			Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi iaculis volutpat dui, ac placerat nulla feugiat vitae. Morbi luctus tellus ac lacinia pretium. Nunc rhoncus enim ac enim dictum imperdiet. Sed tincidunt quam sit amet quam consectetur, in consectetur eros consequat. Phasellus ac tempus orci. Pellentesque sit amet nisl at velit dapibus feugiat. Nulla tempor lorem sit amet imperdiet rhoncus.

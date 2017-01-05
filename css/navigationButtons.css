@@ -1,13 +1,13 @@
 #navContainer {
+	box-sizing: border-box;
 	background-color: #80c6ff;
 	overflow: hidden;
-	padding: 2vh;
-	height: 10vh;
+	padding: 10px;
 	position: fixed;
 	top: 0;
-	width: calc(100vw - 4vh);
+	width: 100vw;
 	z-index: 10;
-	max-height: 75px;
+	height: 90px;
 }
 
 #navLinksContainer {
@@ -37,12 +37,12 @@
 
 .navLinks {
 	display: inline-block;
-	margin-left: 0.25rem;
-	margin-right: 0.25rem;
-	padding-top: 1.5vh;
-	padding-bottom: 1.5vh;
-	padding-left: 3vw;
-	padding-right: 3vw;
+	margin-left: 4px;
+	margin-right: 4px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-left: 40px;
+	padding-right: 40px;
 	font-weight: bold !important;
 	border: 1px solid black;
 }
@@ -102,25 +102,9 @@
 
 @media screen and (min-height: 750px) and (min-width: 900px) and (orientation: landscape) {
 
-	#navContainer {
-		max-height: 75px;
-		padding-top: 10px;
-		padding-bottom: 10px;
-	}
-
-	#landingContainer {
-		top: 95px !important;
-	}
-
 }
 
 @media screen and (max-height: 600px) {
-
-	#navContainer {
-		min-height: 50px;
-		padding-top: 10px;
-		padding-bottom: 10px;
-	}
 
 	@media screen and (min-width: 900px) {
 		#title {
@@ -132,10 +116,6 @@
 	#navLinksContainer {
 		-webkit-transform: translateY(-5px);
 		        transform: translateY(-5px);
-	}
-
-	#videoContainer {
-		top: 60px !important;
 	}
 
 }

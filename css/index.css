@@ -24,7 +24,7 @@ body {
 	-webkit-transform: translateX(-50%);
 	        transform: translateX(-50%);
 	position: fixed;
-	top: 14vh;
+	top: 90px;
 	background-color: #66baff;
 }
 
@@ -57,11 +57,7 @@ body {
 	}
 }
 
-@media screen and (orientation: portrait), screen and (max-width: 1050px) {
-
-	#landingContainer {
-		top: calc(68px);
-	}
+@media screen and (orientation: portrait), screen and (max-width: 1150px) {
 
 	#landingContainer img {
 		width: initial;

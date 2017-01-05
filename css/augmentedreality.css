@@ -23,7 +23,7 @@ body {
 	-webkit-transform: translateX(-50%);
 	        transform: translateX(-50%);
 	position: fixed;
-	top: 14vh;
+	top: 90px;
 }
 
 #video {
@@ -52,11 +52,7 @@ body {
 	}
 }
 
-@media screen and (orientation: portrait), screen and (max-width: 1050px) {
-
-	#videoContainer {
-		top: calc(68px);
-	}
+@media screen and (orientation: portrait), screen and (max-width: 1150px) {
 
 	#video {
 		width: initial;

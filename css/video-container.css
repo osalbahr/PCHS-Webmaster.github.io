@@ -1,0 +1,27 @@
+#videoContainer {
+	width: 100vw;
+	margin-left: 50%;
+	-webkit-transform: translateX(-50%);
+	        transform: translateX(-50%);
+	position: fixed;
+	top: 14vh;
+}
+
+#video {
+	width: 100vw;
+	z-index: -99;
+}
+
+@media screen and (orientation: portrait), screen and (max-width: 1150px) {
+
+	#videoContainer {
+		top: calc(68px);
+	}
+
+	#video {
+		width: initial;
+		min-width: 100vw;
+		min-height: 100vh;
+	}
+
+}

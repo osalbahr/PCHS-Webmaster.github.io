@@ -4,18 +4,18 @@
 	-webkit-transform: translateX(-50%);
 	        transform: translateX(-50%);
 	position: fixed;
-	top: 14vh;
+	top: 90px;
+	z-index: -5;
 }
 
 #video {
 	width: 100vw;
-	z-index: -99;
 }
 
 @media screen and (orientation: portrait), screen and (max-width: 1150px) {
 
 	#videoContainer {
-		top: calc(68px);
+		top: 90px;
 	}
 
 	#video {

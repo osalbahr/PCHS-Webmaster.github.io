@@ -8,7 +8,7 @@
 	z-index: -5;
 }
 
-#video {
+.video {
 	width: 100vw;
 }
 
@@ -18,7 +18,7 @@
 		top: 90px;
 	}
 
-	#video {
+	.video {
 		width: initial;
 		min-width: 100vw;
 		min-height: 100vh;

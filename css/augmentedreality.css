@@ -1,0 +1,25 @@
+/* Specific to this page; do not copy to other pages */
+
+#mainImgContainer {
+	width: 100vw;
+	height: 100vh;
+	margin-top: 100vh;
+	background-image: url("../img/hololens-transparent.png");
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-position: left center;
+	z-index: -6;
+}
+
+#mainContent {
+	margin-top: 0px;
+}
+
+#credits {
+	color: white;
+	text-shadow: 1px 1px 3px black;
+	position: fixed;
+	right: 2px;
+	bottom: 2px;
+	margin: 0px;
+}

@@ -8,7 +8,7 @@
 
 	<title>Augmented Reality | Panther Creek High School</title>
 
-	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,800,900,400italic">
 	<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/angular_material/1.1.0-rc2/angular-material.min.css">
 
 	<link href="css/nav.css" rel="stylesheet">
@@ -35,25 +35,27 @@
 
 	<h1 id="landing" style="color: white;">AUGMENTED REALITY</h1>
 
-	<div id="hololensContainer">
+	<a id="scrollText" style="color: white;">SCROLL DOWN FOR MORE</a>
+
+	<div id="hololensContainer" class="scroll">
 		<p class="credits">
 			Source: <a href="https://www.microsoft.com/microsoft-hololens/en-us" target="_blank">Microsoft</a>
 		</p>
 	</div>
 
-	<div id="pokemongoContainer">
+	<div id="pokemongoContainer" class="scroll">
 		<p class="credits">
 			Source: <a href="http://www.zdnet.com/article/google-glass-gets-a-prescription/" target="_blank">ZDNet</a>
 		</p>
 	</div>
 
-	<div id="googleglassContainer">
+	<div id="googleglassContainer" class="scroll">
 		<p class="credits">
 			Source: <a href="http://www.redbull.com/sg-en/pokemon-go-8-huge-stats" target="_blank">Red Bull</a>
 		</p>
 	</div>
 
-	<md-card id="mainContent">
+	<md-card id="mainContent" class="scroll">
 
 		<p>
 			Augmented reality is a technology that "superimposes a computer-generated image on a user's view of the real world, thus providing a composite view". Augmented reality used to be unthinkable, but now its very real and can be used for many things such as Education, Entertainment, Jobs/Industry and many more. Augmented reality has alot of potential and may just be the new rising industry.
@@ -85,6 +87,37 @@
 	<script src="https://code.jquery.com/jquery-3.0.0.min.js"></script>
 	<script src="js/app.controller.js"></script>
 	<script src="js/fadeInOut.js"></script>
+
+	<script>
+	$(function() {
+
+		$("#scrollText").click(function() {
+
+			var pics = $(".scroll").toArray();
+
+			var picMargins = [];
+
+			pics.forEach(function(pic) {
+				var actualOffset = $(pic).offset().top - $(window).scrollTop() - 90;
+				var offset;
+				if (actualOffset < 0 || Math.abs(actualOffset) < 20) {
+					offset = 1000000;
+				} else {
+					offset = actualOffset;
+				}
+				picMargins.push(offset);
+			});
+
+			var picToScrollTo = $(".scroll")[picMargins.indexOf(Math.min.apply(Math, picMargins))];
+
+			$('html, body').animate({
+	        	scrollTop: $(picToScrollTo).offset().top - 90
+	        }, 1500);
+
+		});
+
+	});
+	</script>
 
 </body>
 

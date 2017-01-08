@@ -26,7 +26,7 @@
 
 	<div id="videoContainer">
 
-		<video id="video" autoplay loop poster="img/hololensVideoPoster.PNG">
+		<video id="video" autoplay loop poster="img/hololensVideoPoster.png" onclick="(this.paused) ? this.play() : this.pause()">
 			<source src="other/HoloLens.mp4" type="video/mp4">
 			<source src="other/HoloLens.webm" type="video/webm">
 		</video>

@@ -1,25 +1,43 @@
 /* Specific to this page; do not copy to other pages */
 
-#mainImgContainer {
+#hololensContainer, #pokemongoContainer, #googleglassContainer {
 	width: 100vw;
-	height: 100vh;
-	margin-top: 100vh;
-	background-image: url("../img/hololens-transparent.png");
+	height: 125vh;
 	background-attachment: fixed;
 	background-repeat: no-repeat;
-	background-position: left center;
+	background-size: cover;
 	z-index: -6;
+}
+
+#hololensContainer {
+	margin-top: 125vh;
+	background-image: url("../img/hololens-transparent.png");
+	background-position: left center;
+}
+
+#pokemongoContainer {
+	background-image: url("../img/pokemongo.jpg");
+	background-position: left top;
+}
+
+#googleglassContainer {
+	background-image: url("../img/googleglass.jpg");
+	background-position: center center;
 }
 
 #mainContent {
 	margin-top: 0px;
 }
 
-#credits {
-	color: white;
-	text-shadow: 1px 1px 3px black;
-	position: fixed;
-	right: 2px;
-	bottom: 2px;
+#mainContent .credits {
+	position: absolute;
+	right: 10px;
+	bottom: 5px;
+}
+
+.credits {
+	font-size: 0.75rem;
+	float: right;
 	margin: 0px;
+	font-weight: bold
 }

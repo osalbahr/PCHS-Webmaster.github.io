@@ -17,12 +17,13 @@
 	<link href="css/augmentedreality.css" rel="stylesheet">
 
 	<link href="img/favicon.ico" rel="shortcut icon">
+	<meta name="theme-color" content="#00b8ff">
 
 </head>
 
 <body ng-controller="AppController as AppCtrl" ng-swipe-right="openMenu()" ng-swipe-left="closeMenu()" ng-cloak>
 
-<ng-include src="'navigation.template.html'"></ng-include>
+	<ng-include src="'navigation.template.html'"></ng-include>
 
 	<div id="videoContainer">
 
@@ -33,9 +34,9 @@
 
 	</div>
 
-	<h1 id="landing" style="color: white;">AUGMENTED REALITY</h1>
+	<h1 id="landing">AUGMENTED REALITY</h1>
 
-	<a id="scrollText" style="color: white;">SCROLL DOWN FOR MORE</a>
+	<a id="scrollText">SCROLL DOWN FOR MORE</a>
 
 	<div id="hololensContainer" class="scroll">
 		<p class="credits">
@@ -87,37 +88,7 @@
 	<script src="https://code.jquery.com/jquery-3.0.0.min.js"></script>
 	<script src="js/app.controller.js"></script>
 	<script src="js/fadeInOut.js"></script>
-
-	<script>
-	$(function() {
-
-		$("#scrollText").click(function() {
-
-			var pics = $(".scroll").toArray();
-
-			var picMargins = [];
-
-			pics.forEach(function(pic) {
-				var actualOffset = $(pic).offset().top - $(window).scrollTop() - 90;
-				var offset;
-				if (actualOffset < 0 || Math.abs(actualOffset) < 20) {
-					offset = 1000000;
-				} else {
-					offset = actualOffset;
-				}
-				picMargins.push(offset);
-			});
-
-			var picToScrollTo = $(".scroll")[picMargins.indexOf(Math.min.apply(Math, picMargins))];
-
-			$('html, body').animate({
-	        	scrollTop: $(picToScrollTo).offset().top - 90
-	        }, 1500);
-
-		});
-
-	});
-	</script>
+	<script src="js/scroll.js"></script>
 
 </body>
 

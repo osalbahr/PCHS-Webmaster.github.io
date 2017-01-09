@@ -1,8 +1,10 @@
 $(function() {
 
-	$("body").fadeIn(350);
+	setTimeout(function() {
+		$("body").fadeIn(350);
+	}, 150);
 
-	$(".navLinks, .sideNavLinks").click(function(e) {
+	$("a[href]").click(function(e) {
 		e.preventDefault();
 		var that = $(this);
 		$("body").fadeOut(250, function() {

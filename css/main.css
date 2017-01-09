@@ -8,7 +8,7 @@ body {
 #landing {
 	font-size: 50px;
 	text-align: center;
-	color: black;
+	color: white;
 	text-shadow: 0px 2px 7px black;
 	position: fixed;
 	top: 50vh;
@@ -22,8 +22,8 @@ body {
 	cursor: pointer;
 	font-size: 1.25rem;
 	font-weight: 700;
+	color: white;
 	text-align: center;
-	color: black;
 	text-shadow: -1px 0 rgb(75, 75, 75), 0 1px rgb(75, 75, 75), 1px 0 rgb(75, 75, 75), 0 -1px rgb(75, 75, 75);
 	position: fixed;
 	top: 100vh;
@@ -86,6 +86,20 @@ body {
 	#landingContainer img {
 		width: initial;
 		min-height: 100vh;
+	}
+
+}
+
+@media screen and (max-width: 900px) {
+
+	#scrollText {
+		display: none;
+	}
+
+	.scroll:not(#mainContent) {
+		height: 60vh;
+		background-size: 150%;
+		background-position: center center;
 	}
 
 }

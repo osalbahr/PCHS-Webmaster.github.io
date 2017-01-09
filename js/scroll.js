@@ -1,6 +1,6 @@
 $(function() {
 
-	$("#scrollText").click(function() {
+	$("#scroll-text").click(function() {
 
 		var pics = $(".scroll").toArray();
 

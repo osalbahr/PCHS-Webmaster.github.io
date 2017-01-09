@@ -1,6 +1,6 @@
 /* Specific to this page; do not copy to other pages */
 
-#hololensContainer, #pokemongoContainer, #googleglassContainer {
+#hololens-container, #pokemongo-container, #googleglass-container {
 	width: 100vw;
 	height: 125vh;
 	background-attachment: fixed;
@@ -9,27 +9,27 @@
 	z-index: -6;
 }
 
-#hololensContainer {
+#hololens-container {
 	margin-top: 125vh;
-	background-image: url("../img/hololens-transparent.png");
+	background-image: url('../img/hololens-transparent.png');
 	background-position: left center;
 }
 
-#pokemongoContainer {
-	background-image: url("../img/pokemongo.jpg");
+#pokemongo-container {
+	background-image: url('../img/pokemongo.jpg');
 	background-position: left top;
 }
 
-#googleglassContainer {
-	background-image: url("../img/googleglass.jpg");
+#googleglass-container {
+	background-image: url('../img/googleglass.jpg');
 	background-position: center center;
 }
 
-#mainContent {
+#main-content {
 	margin-top: 0px;
 }
 
-#mainContent .credits {
+#main-content .credits {
 	position: absolute;
 	right: 10px;
 	bottom: 5px;

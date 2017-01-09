@@ -1,36 +1,31 @@
 <!DOCTYPE html>
+
 <html lang="en" ng-app="PCHS-Webmaster">
-
 <head>
-
 	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta content="width=device-width, initial-scale=1" name="viewport">
 
-	<title>CTE Program | Panther Creek High School</title>
-	
-	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,800,900,400italic">
-	<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/angular_material/1.1.0-rc2/angular-material.min.css">
-
+	<title>TSA Chapter | Panther Creek High School</title>
+	<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,800,900,400italic" rel="stylesheet">
+	<link href="https://ajax.googleapis.com/ajax/libs/angular_material/1.1.0-rc2/angular-material.min.css" rel="stylesheet">
 	<link href="css/nav.css" rel="stylesheet">
 	<link href="css/main.css" rel="stylesheet">
-	<link href="css/cteprogram.css" rel="stylesheet">
-
+	<link href="css/tsachapter.css" rel="stylesheet">
 	<link href="img/favicon.ico" rel="shortcut icon">
-	<meta name="theme-color" content="#00b8ff">
-
+	<meta content="#00b8ff" name="theme-color">
 </head>
 
-<body ng-controller="AppController as AppCtrl" ng-swipe-right="openMenu()" ng-swipe-left="closeMenu()" ng-cloak>
-
-	<ng-include src="'navigation.template.html'"></ng-include>	
-
-	<div id="landingContainer">
-		<img src="https://s3-us-west-2.amazonaws.com/scorestream-team-profile-pictures/teamPic116318-26570-10ek0l4.png" width="700" height="600">
+<body ng-cloak="" ng-controller="AppController as AppCtrl" ng-swipe-left="close-menu()" ng-swipe-right="open-menu()">
+	
+	<ng-include src="'navigation.template.html'"></ng-include>
+	
+	<div id="landing-container">
+		<img height="600" src="img/pc-logo.png" width="700">
 	</div>
 
-	<h1 id="landing">CTE PROGRAM</h1>
+	<h1 id="landing">OUR TSA CHAPTER</h1>
 
-	<md-card id="mainContent">
+	<md-card id="main-content">
 		<p>
 			Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi iaculis volutpat dui, ac placerat nulla feugiat vitae. Morbi luctus tellus ac lacinia pretium. Nunc rhoncus enim ac enim dictum imperdiet. Sed tincidunt quam sit amet quam consectetur, in consectetur eros consequat. Phasellus ac tempus orci. Pellentesque sit amet nisl at velit dapibus feugiat. Nulla tempor lorem sit amet imperdiet rhoncus.
 		</p>
@@ -47,19 +42,24 @@
 			Phasellus congue vel massa quis vulputate. In a imperdiet lacus. Suspendisse mattis nulla est, eu luctus ipsum placerat et. Donec venenatis turpis ut diam aliquet, a pharetra nulla rutrum. Nam maximus augue et sapien egestas, a convallis mauris consectetur. Cras sed viverra nunc. Donec quis nulla facilisis, elementum mi in, auctor arcu. Nulla efficitur commodo vestibulum. Pellentesque euismod dolor et condimentum eleifend. Cras eu ultrices tellus. Nunc placerat maximus elit quis mattis. Pellentesque eget luctus eros. Etiam porttitor non urna in rutrum. Nullam dictum ut felis varius facilisis. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Ut dignissim eget odio ac volutpat.
 		</p>
 	</md-card>
-
-
-
-	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.8/angular-animate.min.js"></script>
-	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular-aria.min.js"></script>
-	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular-touch.min.js"></script>
-	<script src="https://ajax.googleapis.com/ajax/libs/angular_material/1.1.0-rc2/angular-material.min.js"></script>
-	<script src="https://code.jquery.com/jquery-3.0.0.min.js"></script>
-	<script src="js/app.controller.js"></script>
-	<script src="js/fadeInOut.js"></script>
-	<script src="js/scroll.js"></script>
-
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js">
+	</script> 
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.8/angular-animate.min.js">
+	</script> 
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular-aria.min.js">
+	</script> 
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular-touch.min.js">
+	</script> 
+	<script src="https://ajax.googleapis.com/ajax/libs/angular_material/1.1.0-rc2/angular-material.min.js">
+	</script> 
+	<script src="https://code.jquery.com/jquery-3.0.0.min.js">
+	</script> 
+	<script src="js/app.controller.js">
+	</script> 
+	<script src="js/fadeInOut.js">
+	</script> 
+	<script src="js/scroll.js">
+	</script>
 </body>
-
 </html>

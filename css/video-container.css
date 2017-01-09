@@ -1,8 +1,8 @@
-#videoContainer {
+#video-container {
 	width: 100vw;
 	margin-left: 50%;
-	-webkit-transform: translateX(-50%);
-	        transform: translateX(-50%);
+	-webkit-transform: translateY(-50%);
+	transform: translateX(-50%);
 	position: fixed;
 	top: 90px;
 	z-index: -5;
@@ -13,15 +13,12 @@
 }
 
 @media screen and (orientation: portrait), screen and (max-width: 1150px) {
-
-	#videoContainer {
+	#video-container {
 		top: 90px;
 	}
-
 	#video {
 		width: initial;
 		min-width: 100vw;
 		min-height: 100vh;
 	}
-
 }

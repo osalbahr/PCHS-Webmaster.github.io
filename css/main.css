@@ -3,6 +3,16 @@ body {
 	margin: 0px !important;
 	height: initial;
 	display: none;
+	position: absolute;
+	top: 0px;
+	bottom: 0px;
+	left: 0px;
+	right: -15px;
+	overflow: auto;
+}
+
+html {
+	overflow: hidden;
 }
 
 #landing {

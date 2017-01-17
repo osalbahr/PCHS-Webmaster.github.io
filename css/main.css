@@ -8,7 +8,8 @@ body {
 	bottom: 0px;
 	left: 0px;
 	right: -15px;
-	overflow: auto;
+	overflow-y: auto;
+	overflow-x: hidden;
 }
 
 html {

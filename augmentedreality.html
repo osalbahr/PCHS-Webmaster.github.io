@@ -25,14 +25,10 @@
 
 	<ng-include src="'navigation.template.html'"></ng-include>
 
-	<div id="video-container">
-
-	    <video id="video" autoplay loop poster="img/hololens-video-poster.png" onclick="(this.paused) ? this.play() : this.pause()">
-	        <source src="other/HoloLens.mp4" type="video/mp4">
-	        <source src="other/HoloLens.webm" type="video/webm">
-	    </video>
-
-	</div>
+    <video id="video" autoplay loop poster="img/hololens-video-poster.png" onclick="(this.paused) ? this.play() : this.pause()">
+        <source src="other/HoloLens.webm" type="video/webm">
+        <source src="other/HoloLens.mp4" type="video/mp4">
+    </video>
 
 	<h1 id="landing">AUGMENTED REALITY</h1>
 
@@ -70,6 +66,16 @@
 	<script src="js/app.controller.js"></script>
 	<script src="js/fadeInOut.js"></script>
 	<script src="js/scroll.js"></script>
+
+	<script>
+
+	$(function() {
+		$(window).scroll(function() {
+			// $("#video-container").css("margin-top", $(window).scrollTop() + "px")
+		});
+	});
+
+	</script>
 
 </body>
 

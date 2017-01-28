@@ -76,6 +76,8 @@
 	z-index: 100 !important;
 }
 
+/* Squeeze navigation buttons and make them smaller */
+
 @media screen and (max-width: 1150px) {
 	.nav-links {
 		padding-left: 1vw;
@@ -83,7 +85,12 @@
 	}
 }
 
+/* Mobile layout */
+
 @media screen and (orientation: portrait), screen and (max-width: 900px) {
+	._md-sidenav-backdrop {
+		display: initial;
+	}
 	#title {
 		line-height: 0%;
 	}

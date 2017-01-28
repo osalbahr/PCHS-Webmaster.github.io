@@ -83,6 +83,17 @@ html {
 	z-index: -6;
 }
 
+.credits {
+	font-size: 0.75rem;
+	float: right;
+	margin: 0px;
+	margin-right: 5px;
+	margin-top: 5px;
+	font-weight: bold;
+}
+
+/* Mobile layout */
+
 @media screen and (max-width: 900px) {
 
 	#scroll-text {
@@ -91,9 +102,8 @@ html {
 
 	.scroll:not(#main-content) {
 		background-attachment: initial;
-		background-size: contain;
-		background-position: center center;
-		height: auto;
+		height: 50vh;
+		background-size: 150%;
 	}
 
 }

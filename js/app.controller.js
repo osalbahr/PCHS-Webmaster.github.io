@@ -3,15 +3,15 @@ var app = angular.module("PCHS-Webmaster", ["ngAnimate", "ngMaterial", "ngTouch"
 
 //Define routing behavior
 app.config(function($routeProvider) {
-	$routeProvider.when("/cteprogram", {
+	$routeProvider.when("/CTE-Program", {
 		title: "CTE Program | Panther Creek High School TSA",
 		templateUrl: "cteprogram.html"
 	})
-	.when("/tsachapter", {
+	.when("/TSA-Chapter", {
 		title: "TSA Chapter | Panther Creek High School TSA",
 		templateUrl: "tsachapter.html"
 	})
-	.when("/augmentedreality", {
+	.when("/Augmented-Reality", {
 		title: "Augmented Reality | Panther Creek High School TSA",
 		templateUrl: "augmentedreality.html"
 	})
@@ -23,6 +23,7 @@ app.config(function($routeProvider) {
 
 .run(['$rootScope', '$route', function($rootScope, $route) {
     $rootScope.$on('$routeChangeSuccess', function() {
+    	document.body.scrollTop = 0;
         document.title = $route.current.title;
     });
 }])

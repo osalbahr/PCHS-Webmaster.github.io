@@ -1,6 +1,6 @@
 $(function() {
 
-	$("#scroll-text").click(function() {
+	$("body").on("click", "#scroll-text", function() {
 
 		//Put all desired elements into array
 

@@ -1,34 +1,15 @@
-<!--
-MADE BY ROHAN RAO, RONIT JOSHI, NIKHIL CHAUDHRY, AND CHANAKYA SHARMA
-TECHNOLOGY STUDENT ASSOCIATION - WEBMASTER EVENT 2017
-PANTHER CREEK HIGH SCHOOL
--->
-<!DOCTYPE html>
-
-<html lang="en" ng-app="PCHS-Webmaster">
 <head>
-	<meta charset="utf-8">
-	<meta content="width=device-width, initial-scale=1" name="viewport">
-
-	<title>Augmented Reality | Panther Creek High School</title>
-	<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,800,900,400italic" rel="stylesheet">
-	<link href="https://ajax.googleapis.com/ajax/libs/angular_material/1.1.0-rc2/angular-material.min.css" rel="stylesheet">
-	<link href="css/nav.css" rel="stylesheet">
 	<link href="css/main.css" rel="stylesheet">
 	<link href="css/video-container.css" rel="stylesheet">
-	<link href="css/augmentedreality.css" rel="stylesheet">
-	<link href="img/favicon.ico" rel="shortcut icon">
-	<meta content="#00b8ff" name="theme-color">
+	<link href="css/cteprogram.css" rel="stylesheet">	
 </head>
 
-<body ng-controller="AppController as AppCtrl" ng-swipe-left="closeMenu()" ng-swipe-right="openMenu()" ng-cloak>
+<body>
 
-	<ng-include src="'navigation.template.html'"></ng-include>
-
-    <video id="video" autoplay loop poster="img/hololens-video-poster.png" onclick="(this.paused) ? this.play() : this.pause()">
-        <source src="other/HoloLens.webm" type="video/webm">
-        <source src="other/HoloLens.mp4" type="video/mp4">
-    </video>
+	<video id="video" autoplay loop poster="img/hololens-video-poster.png" onclick="(this.paused) ? this.play() : this.pause()">
+	    <source src="other/HoloLens.webm" type="video/webm">
+	    <source src="other/HoloLens.mp4" type="video/mp4">
+	</video>
 
 	<h1 id="landing">AUGMENTED REALITY</h1>
 
@@ -48,25 +29,13 @@ PANTHER CREEK HIGH SCHOOL
 
 	<md-card id="main-content" class="scroll">
 
-		<p> Augmented reality is a technology that "superimposes a computer-generated image on a user"s view of the real world, thus providing a composite view". Augmented reality used to be unthinkable, but now its very real and can be used for many things such as Education, Entertainment, Jobs/Industry and many more. Augmented reality has alot of potential and may just be the new rising industry. </p>
-		<p> Augmented reality uses certain headgear and technology to augment or enhance your view of the world around you. Augmented reality apps or </p>
-		<p> Phasellus congue vel massa quis vulputate. In a imperdiet lacus. Suspendisse mattis nulla est, eu luctus ipsum placerat et. Donec venenatis turpis ut diam aliquet, a pharetra nulla rutrum. Nam maximus augue et sapien egestas, a convallis mauris consectetur. Cras sed viverra nunc. Donec quis nulla facilisis, elementum mi in, auctor arcu. Nulla efficitur commodo vestibulum. Pellentesque euismod dolor et condimentum eleifend. Cras eu ultrices tellus. Nunc placerat maximus elit quis mattis. Pellentesque eget luctus eros. Etiam porttitor non urna in rutrum. Nullam dictum ut felis varius facilisis. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Ut dignissim eget odio ac volutpat. </p>
-		<p> Phasellus congue vel massa quis vulputate. In a imperdiet lacus. Suspendisse mattis nulla est, eu luctus ipsum placerat et. Donec venenatis turpis ut diam aliquet, a pharetra nulla rutrum. Nam maximus augue et sapien egestas, a convallis mauris consectetur. Cras sed viverra nunc. Donec quis nulla facilisis, elementum mi in, auctor arcu. Nulla efficitur commodo vestibulum. Pellentesque euismod dolor et condimentum eleifend. Cras eu ultrices tellus. Nunc placerat maximus elit quis mattis. Pellentesque eget luctus eros. Etiam porttitor non urna in rutrum. Nullam dictum ut felis varius facilisis. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Ut dignissim eget odio ac volutpat. </p>
-		<p> Phasellus congue vel massa quis vulputate. In a imperdiet lacus. Suspendisse mattis nulla est, eu luctus ipsum placerat et. Donec venenatis turpis ut diam aliquet, a pharetra nulla rutrum. Nam maximus augue et sapien egestas, a convallis mauris consectetur. Cras sed viverra nunc. Donec quis nulla facilisis, elementum mi in, auctor arcu. Nulla efficitur commodo vestibulum. Pellentesque euismod dolor et condimentum eleifend. Cras eu ultrices tellus. Nunc placerat maximus elit quis mattis. Pellentesque eget luctus eros. Etiam porttitor non urna in rutrum. Nullam dictum ut felis varius facilisis. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Ut dignissim eget odio ac volutpat. </p>
+		<p>(Augmented Reality) Augmented reality is a technology that "superimposes a computer-generated image on a user"s view of the real world, thus providing a composite view". Augmented reality used to be unthinkable, but now its very real and can be used for many things such as Education, Entertainment, Jobs/Industry and many more. Augmented reality has alot of potential and may just be the new rising industry. </p>
+		<p>Augmented reality uses certain headgear and technology to augment or enhance your view of the world around you. Augmented reality apps or </p>
+		<p>Phasellus congue vel massa quis vulputate. In a imperdiet lacus. Suspendisse mattis nulla est, eu luctus ipsum placerat et. Donec venenatis turpis ut diam aliquet, a pharetra nulla rutrum. Nam maximus augue et sapien egestas, a convallis mauris consectetur. Cras sed viverra nunc. Donec quis nulla facilisis, elementum mi in, auctor arcu. Nulla efficitur commodo vestibulum. Pellentesque euismod dolor et condimentum eleifend. Cras eu ultrices tellus. Nunc placerat maximus elit quis mattis. Pellentesque eget luctus eros. Etiam porttitor non urna in rutrum. Nullam dictum ut felis varius facilisis. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Ut dignissim eget odio ac volutpat. </p>
+		<p>Phasellus congue vel massa quis vulputate. In a imperdiet lacus. Suspendisse mattis nulla est, eu luctus ipsum placerat et. Donec venenatis turpis ut diam aliquet, a pharetra nulla rutrum. Nam maximus augue et sapien egestas, a convallis mauris consectetur. Cras sed viverra nunc. Donec quis nulla facilisis, elementum mi in, auctor arcu. Nulla efficitur commodo vestibulum. Pellentesque euismod dolor et condimentum eleifend. Cras eu ultrices tellus. Nunc placerat maximus elit quis mattis. Pellentesque eget luctus eros. Etiam porttitor non urna in rutrum. Nullam dictum ut felis varius facilisis. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Ut dignissim eget odio ac volutpat. </p>
+		<p>Phasellus congue vel massa quis vulputate. In a imperdiet lacus. Suspendisse mattis nulla est, eu luctus ipsum placerat et. Donec venenatis turpis ut diam aliquet, a pharetra nulla rutrum. Nam maximus augue et sapien egestas, a convallis mauris consectetur. Cras sed viverra nunc. Donec quis nulla facilisis, elementum mi in, auctor arcu. Nulla efficitur commodo vestibulum. Pellentesque euismod dolor et condimentum eleifend. Cras eu ultrices tellus. Nunc placerat maximus elit quis mattis. Pellentesque eget luctus eros. Etiam porttitor non urna in rutrum. Nullam dictum ut felis varius facilisis. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Ut dignissim eget odio ac volutpat. </p>
 		<p class="credits"> Video source: <a href="https://www.youtube.com/watch?v=a-th-cr0Psyu-a" target="_blank">Youtube</a> </p>
 
 	</md-card>
-
-	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
-	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular-animate.min.js"></script>
-	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular-aria.min.js"></script>
-	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular-touch.min.js"></script>
-	<script src="https://ajax.googleapis.com/ajax/libs/angular_material/1.1.0-rc2/angular-material.min.js"></script>
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-	<script src="js/app.controller.js"></script>
-	<script src="js/fadeInOut.js"></script>
-	<script src="js/scroll.js"></script>
-
+	
 </body>
-
-</html>

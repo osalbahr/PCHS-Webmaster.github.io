@@ -21,10 +21,11 @@ app.config(function($routeProvider) {
 	});
 })
 
-.run(['$rootScope', '$route', function($rootScope, $route) {
-    $rootScope.$on('$routeChangeSuccess', function() {
+.run(["$rootScope", "$route", "$mdSidenav", function($rootScope, $route, $mdSidenav) {
+    $rootScope.$on("$routeChangeSuccess", function() {
     	document.body.scrollTop = 0;
         document.title = $route.current.title;
+        $mdSidenav("left").close();
     });
 }])
 

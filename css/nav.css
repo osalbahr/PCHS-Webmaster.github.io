@@ -15,8 +15,17 @@
 	float: right;
 }
 
+#swipe-edge {
+	width: 50px;
+	height: 100%;
+	z-index: 101;
+	position: fixed;
+	top: 90px;
+	left: 0;
+}
+
 #side-nav {
-	z-index: 99999;
+	z-index: 100;
 	display: none;
 	position: fixed;
 	left: 0;

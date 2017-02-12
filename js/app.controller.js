@@ -32,12 +32,12 @@ app.config(function($routeProvider) {
 //Declare controller and its behavior
 .controller("AppController", ["$scope", "$mdSidenav", "$sce", function($scope, $mdSidenav, $sce) {
 
-	//Fired by left swipe event, opens side navigation on mobile
+	//Fired by right swipe event, opens side navigation on mobile
 	$scope.openMenu = function() {
 		$mdSidenav("left").open();
 	}
 
-	//Fired by right swipe event, closes side navigation on mobile
+	//Fired by left swipe event, closes side navigation on mobile
 	$scope.closeMenu = function() {
 		$mdSidenav("left").close();
 	}
@@ -58,7 +58,6 @@ app.config(function($routeProvider) {
 
 		return $sce.trustAsHtml(html);
 	}
-
 
 	$scope.teachers = [
 
@@ -120,7 +119,7 @@ app.config(function($routeProvider) {
 
 		{
 			firstName: "Amy",
-			lastName: "Frisz - Conlon",
+			lastName: "Frisz-Conlon",
 			coursesTaught: "Digital Media I, Digital Media II, Advanced Tech Studies",
 			email: "afrisz-conlon@wcpss.net",
 			websites: ["http://www.bluedesignlab.com/"]
@@ -222,7 +221,38 @@ app.config(function($routeProvider) {
 			websites: ["http://panthercreekdigitalmedia.com"]
 		}	
 
-
 	];
+
+	$scope.advisors = [
+
+		{
+			firstName: "Joe",
+			lastName: "Busby",
+			email: "jbusby@wcpss.net",
+			room: "1514"
+		},
+
+		{
+			firstName: "Amy",
+			lastName: "Frisz-Conlon",
+			email: "afrisz-conlon@wcpss.net",
+			room: "3511"
+		},
+
+		{
+			firstName: "Shane",
+			lastName: "Westhafer",
+			email: "swesthafer@wcpss.net",
+			room: "1516"
+		},
+
+		{
+			firstName: "Chris",
+			lastName: "White",
+			email: "cwhite@wcpss.net",
+			room: "3615"
+		}
+
+	]
 
 }]);

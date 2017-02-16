@@ -1,1 +1,9 @@
 /* Specific to this page; do not copy to other pages */
+div {
+	display: block;
+	margin: auto;
+	padding-top: 50px;
+    padding-right: 50px;
+    padding-bottom: 50px;
+    padding-left: 50px;
+}

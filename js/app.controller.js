@@ -1,5 +1,5 @@
 //Initialize app with all dependencies
-var app = angular.module("PCHS-Webmaster", ["ngAnimate", "ngMaterial", "ngTouch", "ngRoute", "md.data.table"]);
+var app = angular.module("PCHS-Webmaster", ["ngAnimate", "ngMaterial", "ngTouch", "ngRoute", "md.data.table", "jkAngularCarousel"]);
 
 //Define routing behavior
 app.config(function($routeProvider) {
@@ -58,6 +58,22 @@ app.config(function($routeProvider) {
 
 		return $sce.trustAsHtml(html);
 	}
+
+	$scope.tsaImages = [
+
+		{ src: "img/team1.jpg" },
+
+		{ src: "img/robot1.jpg" },
+
+		{ src: "img/field.jpg" },
+
+		{ src: "img/rankings.jpg" },
+
+		{ src: "img/field2.jpg" },
+
+		{ src: "img/awards.jpg" }	
+
+	]
 
 	$scope.teachers = [
 

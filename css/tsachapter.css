@@ -27,3 +27,15 @@
 ._md-off, ._md-on {
 	border-color: rgba(255, 255, 255, 0.74) !important;
 }
+
+@media screen and (max-width: 900px) {
+	.jk-carousel {
+		width: 90vw !important;
+		height: 50vw !important;
+	}
+
+	.carousel-divs {
+		width: 90vw;
+		height: 50vw;
+	}
+}

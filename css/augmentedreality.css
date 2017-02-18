@@ -1,0 +1,52 @@
+/* Specific to this page; do not copy to other pages */
+
+#hololens-container {
+	margin-top: 125vh;
+	background-image: url('../img/hololens-transparent.png');
+	background-position: left center;
+}
+
+#pokemongo-container {
+	background-image: url('../img/pokemongo.jpg');
+	background-position: left top;
+}
+
+#googleglass-container {
+	background-image: url('../img/googleglass.jpg');
+	background-position: center center;
+}
+
+#main-content {
+	margin-top: 0px;
+}
+
+#main-content .credits {
+	position: absolute;
+	right: 10px;
+	bottom: 5px;
+}
+
+#scroll-text {
+	cursor: pointer;
+	font-size: 1.25rem;
+	font-weight: 700;
+	color: white;
+	text-align: center;
+	text-shadow: -1px 0 rgb(75, 75, 75), -1px 1px rgb(75, 75, 75), 0 1px rgb(75, 75, 75), 1px 1px rgb(75, 75, 75), 1px 0 rgb(75, 75, 75), 1px -1px rgb(75, 75, 75), 0 -1px rgb(75, 75, 75), -1px -1px rgb(75, 75, 75);
+	position: fixed;
+	top: 100vh;
+	left: 50vw;
+	-webkit-transform: translate(-50%, calc(-100% - 5px));
+	        transform: translate(-50%, calc(-100% - 5px));
+	-webkit-transition: 0.3s;
+	transition: 0.3s;
+}
+
+#scroll-text:hover {
+	font-size: 1.35rem;
+	text-shadow: -1px 0 rgb(75, 75, 75), -1px 1px rgb(75, 75, 75), 0 1px rgb(75, 75, 75), 1px 1px rgb(75, 75, 75), 1px 0 rgb(75, 75, 75), 1px -1px rgb(75, 75, 75), 0 -1px rgb(75, 75, 75), -1px -1px rgb(75, 75, 75), 0px 0px 0 rgb(75, 75, 75), 1px 1px 0 rgb(75, 75, 75), 2px 2px 0 rgb(75, 75, 75), 3px 3px 0 rgb(75, 75, 75), 4px 4px 0 rgb(75, 75, 75), 5px 5px 0 rgb(75, 75, 75), 6px 6px 0 rgb(75, 75, 75), 7px 7px 0 rgb(75, 75, 75), 8px 8px 0 rgb(75, 75, 75), 9px 9px 0 rgb(75, 75, 75), 10px 10px 0 rgb(75, 75, 75), 11px 11px 0 rgb(75, 75, 75), 12px 12px 0 rgb(75, 75, 75), 13px 13px 0 rgb(75, 75, 75), 14px 14px 0 rgb(75, 75, 75), 15px 15px 0 rgb(75, 75, 75), 16px 16px 0 rgb(75, 75, 75), 17px 17px 0 rgb(75, 75, 75), 18px 18px 0 rgb(75, 75, 75), 19px 19px 0 rgb(75, 75, 75), 20px 20px 0 rgb(75, 75, 75), 21px 21px 0 rgb(75, 75, 75), 22px 22px 0 rgb(75, 75, 75), 23px 23px 0 rgb(75, 75, 75), 24px 24px 0 rgb(75, 75, 75), 25px 25px 0 rgb(75, 75, 75), 26px 26px 0 rgb(75, 75, 75), 27px 27px 0 rgb(75, 75, 75), 28px 28px 0 rgb(75, 75, 75), 29px 29px 0 rgb(75, 75, 75), 30px 30px 0 rgb(75, 75, 75), 31px 31px 0 rgb(75, 75, 75), 32px 32px 0 rgb(75, 75, 75), 33px 33px 0 rgb(75, 75, 75), 35px 35px 0 transparent;
+}
+
+#scroll-text:active {
+	font-size: 1.3rem;
+}

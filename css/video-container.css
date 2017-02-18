@@ -1,0 +1,9 @@
+#video {
+	min-width: 100%;
+	margin-left: 50%;
+	-webkit-transform: translateY(-50%);
+	transform: translateX(-50%);
+	position: fixed;
+	top: 90px;
+	z-index: -5;
+}

@@ -1,0 +1,129 @@
+#nav-container {
+	box-sizing: border-box;
+	background-color: #80c6ff;
+	overflow: hidden;
+	padding: 10px;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	z-index: 20;
+	height: 90px;
+	box-shadow: 0px 0px 10px black;
+}
+
+#nav-links-container {
+	float: right;
+}
+
+#swipe-edge {
+	width: 50px;
+	height: 100%;
+	z-index: 101;
+	position: fixed;
+	top: 90px;
+	left: 0;
+}
+
+#side-nav {
+	z-index: 100;
+	display: none;
+	position: fixed;
+	left: 0;
+	min-width: 60vw;
+	max-width: 70vw;
+}
+
+#menu-icon {
+	float: left;
+	display: none;
+}
+
+#title {
+	float: left;
+	line-height: 100%;
+	font-weight: bolder !important;
+	text-shadow: 0px 0px 0 #66baff, 1px 1px 0 #66baff, 2px 2px 0 #66baff, 3px 3px 0 #66baff, 4px 4px 0 #66baff, 5px 5px 0 #66baff, 6px 6px 0 #66baff, 7px 7px 0 #66baff, 8px 8px 0 #66baff, 9px 9px 0 #66baff, 10px 10px 0 #66baff, 11px 11px 0 #66baff, 12px 12px 0 #66baff, 13px 13px 0 #66baff, 14px 14px 0 #66baff, 15px 15px 0 #66baff, 16px 16px 0 #66baff, 17px 17px 0 #66baff, 18px 18px 0 #66baff, 19px 19px 0 #66baff, 20px 20px 0 #66baff, 21px 21px 0 #66baff, 22px 22px 0 #66baff, 23px 23px 0 #66baff, 24px 24px 0 #66baff, 25px 25px 0 #66baff, 26px 26px 0 #66baff, 27px 27px 0 #66baff, 28px 28px 0 #66baff, 29px 29px 0 #66baff, 30px 30px 0 #66baff, 31px 31px 0 #66baff, 32px 32px 0 #66baff, 33px 33px 0 #66baff, 34px 34px 0 #66baff, 35px 35px 0 #66baff, 36px 36px 0 #66baff, 37px 37px 0 #66baff, 38px 38px 0 #66baff, 39px 39px 0 #66baff, 40px 40px 0 #66baff, 41px 41px 0 #66baff, 42px 42px 0 #66baff, 43px 43px 0 #66baff, 44px 44px 0 #66baff, 45px 45px 0 #66baff, 46px 46px 0 #66baff, 47px 47px 0 #66baff, 48px 48px 0 #66baff, 59px 59px 0 #66baff, 50px 50px 0 #66baff, 51px 51px 0 #66baff, 52px 52px 0 #66baff, 53px 53px 0 #66baff, 54px 54px 0 #66baff, 55px 55px 0 #66baff, 56px 56px 0 #66baff, 57px 57px 0 #66baff, 58px 58px 0 #66baff, 59px 59px 0 #66baff, 60px 60px 0 #66baff, 61px 61px 0 #66baff, 62px 62px 0 #66baff, 63px 63px 0 #66baff, 64px 64px 0 #66baff, 65px 65px 0 #66baff, 66px 66px 0 #66baff, 67px 67px 0 #66baff, 68px 68px 0 #66baff, 69px 69px 0 #66baff, 70px 70px 0 #66baff, 71px 71px 0 #66baff, 72px 72px 0 #66baff, 73px 73px 0 #66baff, 74px 74px 0 #66baff, 75px 75px 0 #66baff, 76px 76px 0 #66baff, 77px 77px 0 #66baff, 78px 78px 0 #66baff, 79px 79px 0 #66baff, 80px 80px 0 #66baff, 81px 81px 0 #66baff, 82px 82px 0 #66baff, 83px 83px 0 #66baff, 84px 84px 0 #66baff, 85px 85px 0 #66baff, 86px 86px 0 #66baff, 87px 87px 0 #66baff, 88px 88px 0 #66baff, 89px 89px 0 #66baff, 90px 90px 0 transparent;
+}
+
+.nav-links {
+	background-color: #80c6ff;
+	display: inline-block;
+	margin-left: 4px;
+	margin-right: 4px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-left: 40px;
+	padding-right: 40px;
+	font-weight: bold !important;
+	border: 1px solid rgba(0, 0, 0, 0.4);
+	box-shadow: 0px 0px 0 #66baff, 1px 1px 0 #66baff, 2px 2px 0 #66baff, 3px 3px 0 #66baff, 4px 4px 0 #66baff, 5px 5px 0 #66baff, 6px 6px 0 #66baff, 7px 7px 0 #66baff, 8px 8px 0 #66baff, 9px 9px 0 #66baff, 10px 10px 0 #66baff, 11px 11px 0 #66baff, 12px 12px 0 #66baff, 13px 13px 0 #66baff, 14px 14px 0 #66baff, 15px 15px 0 #66baff, 16px 16px 0 #66baff, 17px 17px 0 #66baff, 18px 18px 0 #66baff, 19px 19px 0 #66baff, 20px 20px 0 #66baff, 21px 21px 0 #66baff, 22px 22px 0 #66baff, 23px 23px 0 #66baff, 24px 24px 0 #66baff, 25px 25px 0 #66baff, 26px 26px 0 #66baff, 27px 27px 0 #66baff, 28px 28px 0 #66baff, 29px 29px 0 #66baff, 30px 30px 0 #66baff, 31px 31px 0 #66baff, 32px 32px 0 #66baff, 33px 33px 0 #66baff, 34px 34px 0 #66baff, 35px 35px 0 #66baff, 36px 36px 0 #66baff, 37px 37px 0 #66baff, 38px 38px 0 #66baff, 39px 39px 0 #66baff, 40px 40px 0 #66baff, 41px 41px 0 #66baff, 42px 42px 0 #66baff, 43px 43px 0 #66baff, 44px 44px 0 #66baff, 45px 45px 0 #66baff, 46px 46px 0 #66baff, 47px 47px 0 #66baff, 48px 48px 0 #66baff, 59px 59px 0 #66baff, 50px 50px 0 #66baff, 51px 51px 0 #66baff, 52px 52px 0 #66baff, 53px 53px 0 #66baff, 54px 54px 0 #66baff, 55px 55px 0 #66baff, 56px 56px 0 #66baff, 57px 57px 0 #66baff, 58px 58px 0 #66baff, 59px 59px 0 #66baff, 60px 60px 0 #66baff, 61px 61px 0 #66baff, 62px 62px 0 #66baff, 63px 63px 0 #66baff, 64px 64px 0 #66baff, 65px 65px 0 #66baff, 66px 66px 0 #66baff, 67px 67px 0 #66baff, 68px 68px 0 #66baff, 69px 69px 0 #66baff, 70px 70px 0 #66baff, 71px 71px 0 #66baff, 72px 72px 0 #66baff, 73px 73px 0 #66baff, 74px 74px 0 #66baff, 75px 75px 0 #66baff, 76px 76px 0 #66baff, 77px 77px 0 #66baff, 78px 78px 0 #66baff, 79px 79px 0 #66baff, 80px 80px 0 #66baff, 81px 81px 0 #66baff, 82px 82px 0 #66baff, 83px 83px 0 #66baff, 84px 84px 0 #66baff, 85px 85px 0 #66baff, 86px 86px 0 #66baff, 87px 87px 0 #66baff, 88px 88px 0 #66baff, 89px 89px 0 #66baff, 90px 90px 0 transparent;
+	-webkit-transition: 0.2s;
+	transition: 0.2s;
+}
+
+.nav-links:hover {
+	font-size: 15px;
+	background-color: #8fc4ef !important;
+}
+
+.side-nav-links {
+	display: block;
+	padding-top: 1.5vh;
+	padding-bottom: 1.5vh;
+	padding-left: 3vw;
+	padding-right: 3vw;
+	font-weight: bold !important;
+	font-size: 1.1rem;
+}
+
+._md-sidenav-backdrop {
+	display: none;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100vh;
+	z-index: 100 !important;
+}
+
+/* Squeeze navigation buttons and make them smaller */
+
+@media screen and (max-width: 1150px) {
+	.nav-links {
+		padding-left: 1vw;
+		padding-right: 1vw;
+	}
+}
+
+/* Mobile layout */
+
+@media screen and (orientation: portrait), screen and (max-width: 900px) {
+	._md-sidenav-backdrop {
+		display: initial;
+	}
+	#title {
+		line-height: 0%;
+	}
+	#nav-links-container {
+		display: none;
+	}
+	#menu-icon, #title {
+		-webkit-transform: translateY(15px);
+		transform: translateY(15px);
+	}
+	#side-nav {
+		display: initial;
+	}
+	#menu-icon {
+		display: initial;
+	}
+}
+
+@media screen and (max-width: 400px) {
+	#title span {
+		display: none;
+	}
+	#title:after {
+		content: 'PCHS';
+	}
+}

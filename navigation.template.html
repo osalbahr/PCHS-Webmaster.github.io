@@ -1,0 +1,39 @@
+<div id="nav-container">
+
+	<md-button class="md-icon-button md-ink-ripple" ng-click="openMenu()" id="menu-icon" aria-label="menu button">
+	    <md-icon>
+	    	<svg>
+				<g id="Icon">
+				    <g>
+				        <rect fill="none" width="24" height="24"></rect>
+				        <path d="M3,18h18v-2H3V18z M3,13h18v-2H3V13z M3,6v2h18V6H3z"></path>
+				    </g>
+				</g>
+
+			</svg>
+		</md-icon>
+	</md-button>
+
+	<h1 id="title"><span>PANTHER CREEK HS</span></h1>
+
+	<div id="nav-links-container">
+		<md-button href="#" class="nav-links">HOME</md-button>
+		<md-button href="#CTE-Program" class="nav-links">CTE PROGRAM</md-button>
+		<md-button href="#TSA-Chapter" class="nav-links">OUR TSA CHAPTER</md-button>
+		<md-button href="#Augmented-Reality" class="nav-links">AUGMENTED REALITY</md-button>
+	</div>
+
+</div>
+
+<md-sidenav md-component-id="left" id="side-nav" ng-swipe-left="closeMenu()">
+	<md-content role="navigation">
+		<md-button href="#" class="side-nav-links">HOME</md-button>
+		<md-button href="#CTE-Program" class="side-nav-links">CTE PROGRAM</md-button>
+		<md-button href="#TSA-Chapter" class="side-nav-links">OUR TSA CHAPTER</md-button>
+		<md-button href="#Augmented-Reality" class="side-nav-links">AUGMENTED REALITY</md-button>
+	</md-content>
+</md-sidenav>
+
+<div id="swipe-edge" ng-swipe-right="openMenu()">
+
+</div>

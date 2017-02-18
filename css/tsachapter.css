@@ -1,0 +1,29 @@
+/* Specific to this page; do not copy to other pages */
+
+#tsa-logo {
+	margin-left: auto;
+	margin-right: auto;
+	width: 30%;
+}
+
+.tsa-images {
+	height: 400px;
+	width: auto;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.carousel-divs {
+	width: 700px;
+	height: 400px;
+	background-color: #66baff;
+}
+
+.jk-carousel {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+._md-off, ._md-on {
+	border-color: rgba(255, 255, 255, 0.74) !important;
+}

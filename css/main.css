@@ -1,0 +1,112 @@
+body {
+	font-family: Roboto, Arial;
+	margin: 0px !important;
+	overflow-x: hidden;
+}
+
+html {
+	width: initial;
+	height: initial;
+}
+
+#view.ng-enter {
+	animation: appear .7s;
+}
+
+#view.ng-leave {
+	animation: disappear .7s;
+}
+
+@keyframes appear {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes disappear {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+#landing {
+	font-size: 50px;
+	text-align: center;
+	color: white;
+	text-shadow: 0px 2px 7px black;
+	position: fixed;
+	top: 50vh;
+	left: 50vw;
+	-webkit-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+	z-index: 1;
+}
+
+#landing-container {
+	width: 100%;
+	height: 100vh;
+	position: fixed;
+	top: 90px;
+	background-color: #66baff;
+}
+
+#landing-container img {
+	margin-left: 50%;
+	-webkit-transform: translateX(-50%);
+	transform: translateX(-50%);
+	width: initial;
+	min-height: 100vh;
+	opacity: 0.5;
+	z-index: -1;
+}
+
+#main-content {
+	width: 100%;
+	margin: 100vh auto 0px auto;
+	padding: 15px;
+	position: relative;
+	z-index: 10;
+}
+
+.scroll:not(#main-content) {
+	width: 100%;
+	height: 125vh;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-size: cover;
+	z-index: -6;
+}
+
+md-toolbar {
+	z-index: initial;
+}
+
+.credits {
+	font-size: 0.75rem;
+	float: right;
+	margin: 0px;
+	margin-right: 5px;
+	margin-top: 5px;
+	font-weight: bold;
+}
+
+/* Mobile layout */
+
+@media screen and (max-width: 900px) {
+
+	#scroll-text {
+		display: none;
+	}
+
+	.scroll:not(#main-content) {
+		background-attachment: initial;
+		height: 50vh;
+		background-size: 150%;
+	}
+
+}

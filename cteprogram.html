@@ -1,0 +1,46 @@
+<head>
+
+</head>
+
+<body>
+
+	<div id="landing-container">
+		<img width="700" height="582" src="img/pc-logo.png">
+	</div>
+
+	<h1 id="landing">CTE PROGRAM</h1>
+
+	<md-card id="main-content">
+		
+		<md-toolbar class="md-table-toolbar md-default">
+			<div class="md-toolbar-tools">
+				<span>CTE Teacher Information</span>
+			</div>
+		</md-toolbar>
+
+		<md-table-container id="data-table">
+			<table md-table>
+				<thead md-head md-order="order">
+					<tr md-row>
+						<th md-column md-order-by="firstName">First Name</th>
+						<th md-column md-order-by="lastName">Last Name</th>
+						<th md-column>Courses Taught</th>
+						<th md-column>E-mail</th>
+						<th md-column>Website(s)</th>
+					</tr>
+				</thead>
+				<tbody md-body>
+					<tr md-row md-select-id="name" md-auto-select ng-repeat="teacher in teachers | orderBy : order.replace('-', '') : order.startsWith('-')">
+						<td md-cell>{{teacher.firstName}}</td>
+						<td md-cell>{{teacher.lastName}}</td>
+						<td md-cell>{{teacher.coursesTaught}}</td>
+						<td md-cell><a ng-href="{{'mailto:' + teacher.email}}">{{teacher.email}}</a></td>
+						<td md-cell ng-bind-html="displayWebsites(teacher.websites)"></td>
+					</tr>
+				</tbody>
+			</table>
+		</md-table-container>
+		
+	</md-card>
+
+</body>

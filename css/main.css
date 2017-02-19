@@ -116,7 +116,7 @@ md-toolbar {
 	}
 
 	#content-width {
-		width: initial;
+		width: 100%;
 	}
 
 }

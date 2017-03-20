@@ -50,7 +50,13 @@
 		</md-table-container>
 
 	</div>
-
+	
+	<div ng-repeat="officer in officers">
+	<h2>{{officer.firstName}}</h2> 
+	<h2>{{officer.lastName}}</h2>
+	<img ng-src="{{officer.photo}}"/>
+	<p>{{officer.bio}}</p>
+	</div>
 	</md-card>
 	
 </body>

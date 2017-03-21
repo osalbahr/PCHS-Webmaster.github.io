@@ -275,28 +275,28 @@ app.config(function($routeProvider) {
 		{
 			firstName: "Nicholas",
 			lastName: " Lisi",
-			photo: "img/nick.png",
+			photo: "nick.png",
 			bio: "Hello My name is Nicholas Lisi and I am the secretary of Panther Creek TSA's chapter. My favorite subject is math, and I am planning to major in sports managing. Some of my hobbies include fishing, basketball, and watching all sports."
 		},
 
 		{
 			firstName: "Surya",
 			lastName: " Makthal",
-			photo: "img/s.png",
+			photo: "s.png",
 			bio:"Hello! I am Surya Makthal, a senior at Panther Creek High School in Cary, NC and the President of my school's Technology Student Association chapter. I have been in TSA since my sophomore year, having competed in Music Production, Engineering Design, and Children's Stories. I had the opportunity to compete at the national level twice for my work in Children's Stories. Outside of TSA, I enjoy playing soccer, cricket, music, and video games. I enjoy math, science, and CTE courses and hope to study electrical engineering in college."
 		},
 
 		{
 			firstName: "Bryce",
 			lastName: "Junkins",
-			photo: "img/bryce.png",
+			photo: "bryce.png",
 			bio: "Hello my name is Bryce Junkins and I am the parlimentarian of Panther Creek TSA's chapter. I enjoy playing video game and coding. In my free time I enjoy mountain biking and watching documentaries."
 		},
 
 		{
 			firstName: "Ian",
 			lastName: "Holmes",
-			photo: "img/ian.png",
+			photo: "ian.png",
 			bio: "Hello my name is Ian Holmes and I am the sergeant-at-arms of Panther Creek TSA's chapter. I enjoy playing video games and am also the leader of the E-sports club. In addition I enjoy running, political science, and collecting Pokemon cards."
 
 		},
@@ -304,7 +304,7 @@ app.config(function($routeProvider) {
 		{
 			firstName: "Matthew",
 			lastName: "Pinto",
-			photo: "img/matthew.png",
+			photo: "matthew.png",
 			bio:"Matthew Pinto is the reporter of Panther Creek's TSA chapter. His favorite subjects are math and science, and he is planning to major in computer engineering. He enjoys programming, gaming, and running."
 
 		}

@@ -282,7 +282,7 @@ app.config(function($routeProvider) {
 		{
 			firstName: "Surya",
 			lastName: " Makthal",
-			photo: "/img/s.png",
+			photo: "/img/surya.png",
 			bio:"Hello! I am Surya Makthal, a senior at Panther Creek High School in Cary, NC and the President of my school's Technology Student Association chapter. I have been in TSA since my sophomore year, having competed in Music Production, Engineering Design, and Children's Stories. I had the opportunity to compete at the national level twice for my work in Children's Stories. Outside of TSA, I enjoy playing soccer, cricket, music, and video games. I enjoy math, science, and CTE courses and hope to study electrical engineering in college."
 		},
 

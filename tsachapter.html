@@ -22,11 +22,7 @@
 
 		<jk-carousel data="tsaImages" item-template-url="'image-carousel.template.html'" max-width="700" max-height="400"></jk-carousel>
 
-		<md-toolbar class="md-table-toolbar md-default">
-		  <div class="md-toolbar-tools">
-		    <span>Panther Creek TSA Advisors</span>
-		  </div>
-		</md-toolbar>
+		<h1>Panther Creek TSA Advisors</h1>
 
 		<md-table-container id="data-table">
 			<table md-table>
@@ -49,13 +45,33 @@
 			</table>
 		</md-table-container>
 
-	</div>
-	
-	<div ng-repeat="officer in officers">
-	<h2>{{officer.firstName}}</h2> 
-	<h2>{{officer.lastName}}</h2>
-	<img ng-src="{{officer.photo}}"/>
-	<p>{{officer.bio}}</p>
+		<h1>Panther Creek TSA Officers</h1>
+		
+		<div class="officer-container">
+
+		<div ng-repeat="officer in officers" class="officer">
+
+		<md-card>
+			<div class="photo-container">
+	        	<img ng-src="{{officer.photo}}" class="md-card-image" alt="{{officer.firstName}} {{officer.lastName}}">
+	        </div>
+	        <md-card-title>
+	          <md-card-title-text>
+	            <span class="md-headline">{{officer.firstName}} {{officer.lastName}}</span>
+	          </md-card-title-text>
+	        </md-card-title>
+	        <md-card-content>
+	          <p>
+	            {{officer.bio}}
+	          </p>
+	        </md-card-content>
+	      </md-card>
+
+		</div>
+		</div>
+
+
+
 	</div>
 	</md-card>
 	

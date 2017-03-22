@@ -7,8 +7,9 @@
 }
 
 .tsa-images {
+	object-fit: cover;
 	height: 400px;
-	width: auto;
+	width: 700px;
 	margin-left: auto;
 	margin-right: auto;
 }
@@ -28,6 +29,30 @@
 	border-color: rgba(255, 255, 255, 0.74) !important;
 }
 
+.officer-container {
+	display: flex;
+	flex-wrap: wrap;
+	width: 100vw;
+	margin-left: -10vw;
+}
+
+.officer {
+	width: 250px;
+	margin: 5px;
+}
+
+.photo-container {
+	width: 250px;
+	height: 250px;
+}
+
+.md-card-image {
+	object-fit: cover;
+	width: 235px;
+	height: 250px !important;
+}
+
+
 @media screen and (max-width: 900px) {
 	.jk-carousel {
 		width: 90vw !important;
@@ -38,4 +63,10 @@
 		width: 90vw;
 		height: 50vw;
 	}
+
+	.officer-container {
+		width: initial;
+		margin-left: initial;
+	}
+
 }

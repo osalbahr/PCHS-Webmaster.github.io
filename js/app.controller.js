@@ -271,17 +271,17 @@ app.config(function($routeProvider) {
 
 	$scope.officers = [
 		{
-			firstName: "Nicholas",
-			lastName: " Lisi",
-			photo: "img/nick.png",
-			bio: "Nicholas Lisi is the secretary of Panther Creek TSA's chapter. His favorite subject is math, and he is planning to major in sports managing. Some of his hobbies include fishing, basketball, and watching all sports."
-		},
-
-		{
 			firstName: "Surya",
 			lastName: " Makthal",
 			photo: "img/surya.png",
 			bio:"Surya Makthal is a senior and the president of Panther Creek's TSA chapter. He enjoys playing soccer, cricket, music, and video games. He enjoys math, science, and CTE courses and hopes to study electrical engineering in college."
+		},
+
+		{
+			firstName: "Nicholas",
+			lastName: " Lisi",
+			photo: "img/nick.png",
+			bio: "Nicholas Lisi is the secretary of Panther Creek TSA's chapter. His favorite subject is math, and he is planning to major in sports managing. Some of his hobbies include fishing, basketball, and watching all sports."
 		},
 
 		{

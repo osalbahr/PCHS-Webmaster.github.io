@@ -20,6 +20,8 @@
 			</div>
 		</md-toolbar>
 
+		<jk-carousel data="cteImages" item-template-url="'image-carousel.template.html'" max-width="700" max-height="400"></jk-carousel>
+
 		<md-table-container id="data-table">
 			<table md-table>
 				<thead md-head md-order="order">
@@ -42,6 +44,29 @@
 				</tbody>
 			</table>
 		</md-table-container>
+
+
+		<div class="course-container">
+
+		<div ng-repeat="course in courseInfo" class="course">
+
+		<md-card>
+	        <md-card-title>
+	          <md-card-title-text>
+	            <span class="md-headline">{{course.name}}</span>
+	          </md-card-title-text>
+	        </md-card-title>
+	        <md-card-content>
+	          <p>
+	            {{course.info}}
+	          </p>
+	        </md-card-content>
+	      </md-card>
+
+		</div>
+		</div>
+
+
 		
 	</div>
 

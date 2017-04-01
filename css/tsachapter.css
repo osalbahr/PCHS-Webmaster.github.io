@@ -6,34 +6,21 @@
 	width: 30%;
 }
 
-.tsa-images {
-	object-fit: cover;
-	height: 400px;
-	width: 700px;
-	margin-left: auto;
+#group-pic {
+	width: 40vw;
 	margin-right: auto;
-}
-
-.carousel-divs {
-	width: 700px;
-	height: 400px;
-	background-color: #66baff;
-}
-
-.jk-carousel {
 	margin-left: auto;
-	margin-right: auto;
-}
-
-._md-off, ._md-on {
-	border-color: rgba(255, 255, 255, 0.74) !important;
 }
 
 .officer-container {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	flex-wrap: wrap;
+	-ms-flex-wrap: wrap;
+	    flex-wrap: wrap;
 	width: 100vw;
 	margin-left: -10vw;
+	text-align: center;
 }
 
 .officer {
@@ -46,27 +33,15 @@
 	height: 250px;
 }
 
-.md-card-image {
-	object-fit: cover;
-	width: 235px;
-	height: 250px !important;
-}
-
-
 @media screen and (max-width: 900px) {
-	.jk-carousel {
-		width: 90vw !important;
-		height: 50vw !important;
-	}
-
-	.carousel-divs {
-		width: 90vw;
-		height: 50vw;
-	}
 
 	.officer-container {
 		width: initial;
 		margin-left: initial;
+	}
+
+	#group-pic {
+		width: 70vw;
 	}
 
 }

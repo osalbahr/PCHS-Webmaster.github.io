@@ -42,9 +42,10 @@
 			</table>
 		</md-table-container>
 
-		<h1>CTE Course Descriptions</h1>
+		<h1>CTE Course Descriptions (Click to Expand/Collapse)</h1>
 
 		<div class="md-accordion" ng-repeat="course in courseInfo">
+
 		    <md-toolbar ng-init="course.expanded = false" ng-click="course.expanded = !course.expanded" class="courseTitle">
 		        <div class="md-toolbar-tools">
 		            <h2>{{course.name}}</h2> 

@@ -317,8 +317,22 @@ app.config(function($routeProvider) {
 			firstName: "Matthew",
 			lastName: "Pinto",
 			photo: "img/officers/matthew.png",
-			bio:"Matthew Pinto is the reporter of Panther Creek's TSA chapter. His favorite subjects are math and science, and he is planning to major in computer engineering. He enjoys programming, gaming, and running."
+			bio: "Matthew Pinto is the reporter of Panther Creek's TSA chapter. His favorite subjects are math and science, and he is planning to major in computer engineering. He enjoys programming, gaming, and running."
 
+		},
+
+		{
+			firstName: "Arvind",
+			lastName: "Prasad",
+			photo: "",
+			bio: ""
+		},
+
+		{
+			firstName: "Parth",
+			lastName: "Upadhyay",
+			photo: "",
+			bio: ""
 		}
 	];
 

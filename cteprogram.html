@@ -14,13 +14,9 @@
 		
 	<div id="content-width">
 
-		<md-toolbar class="md-table-toolbar md-default">
-			<div class="md-toolbar-tools">
-				<span>CTE Teacher Information</span>
-			</div>
-		</md-toolbar>
-
 		<jk-carousel data="cteImages" item-template-url="'image-carousel.template.html'" max-width="700" max-height="400"></jk-carousel>
+
+		<h1>CTE Teacher Information</h1>
 
 		<md-table-container id="data-table">
 			<table md-table>
@@ -45,6 +41,7 @@
 			</table>
 		</md-table-container>
 
+		<h1>CTE Course Descriptions</h1>
 
 		<div class="course-container">
 
@@ -53,7 +50,7 @@
 		<md-card>
 	        <md-card-title>
 	          <md-card-title-text>
-	            <span class="md-headline">{{course.name}}</span>
+	            <span class="md-headline"><b>{{course.name}}</b></span>
 	          </md-card-title-text>
 	        </md-card-title>
 	        <md-card-content>

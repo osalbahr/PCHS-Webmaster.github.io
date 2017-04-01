@@ -1,1 +1,27 @@
 /* Specific to this page; do not copy to other pages */
+
+.md-accordion {
+	margin-bottom: 10px;
+}
+
+.courseTitle {
+	cursor: pointer;
+	background-color: #49a5f1 !important;
+}
+
+.md-toolbar-tools {
+	font-weight: 500;
+}
+
+.courseContent {
+	height: 0;
+	overflow: hidden;
+	background-color: rgb(247, 247, 247);
+	transition: 0.2s ease-out;
+}
+
+.courseContentActive {
+	height: auto;
+	padding: 20px;
+	display: block;
+}

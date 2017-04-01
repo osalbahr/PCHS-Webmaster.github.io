@@ -18,8 +18,9 @@
 	display: flex;
 	-ms-flex-wrap: wrap;
 	    flex-wrap: wrap;
+	justify-content: center;
 	width: 100vw;
-	margin-left: -10vw;
+	margin-left: -12vw;
 	text-align: center;
 }
 

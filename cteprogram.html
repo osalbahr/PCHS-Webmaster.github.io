@@ -1,5 +1,6 @@
 <head>
 	<link href="css/cteprogram.css" rel="stylesheet">
+	<link href="css/ang-accordion.css" rel="stylesheet">
 </head>
 
 <body>
@@ -43,25 +44,14 @@
 
 		<h1>CTE Course Descriptions</h1>
 
-		<div class="course-container">
-
-		<div ng-repeat="course in courseInfo" class="course">
-
-		<md-card>
-	        <md-card-title>
-	          <md-card-title-text>
-	            <span class="md-headline"><b>{{course.name}}</b></span>
-	          </md-card-title-text>
-	        </md-card-title>
-	        <md-card-content>
-	          <p>
-	            {{course.info}}
-	          </p>
-	        </md-card-content>
-	      </md-card>
-
-		</div>
-		</div>
+		<div class="md-accordion" ng-repeat="course in courseInfo">
+		    <md-toolbar ng-init="course.expanded = false" ng-click="course.expanded = !course.expanded" class="courseTitle">
+		        <div class="md-toolbar-tools">
+		            <h2>{{course.name}}</h2> 
+		        </div>
+		    </md-toolbar>
+		    <div ng-class="{courseContent:true, courseContentActive:course.expanded}">{{course.info}}</div>
+		<div>
 
 
 		

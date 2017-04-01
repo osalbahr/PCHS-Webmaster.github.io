@@ -1,5 +1,5 @@
 //Initialize app with all dependencies
-var app = angular.module("PCHS-Webmaster", ["ngAnimate", "ngMaterial", "ngTouch", "ngRoute", "md.data.table", "jkAngularCarousel"]);
+var app = angular.module("PCHS-Webmaster", ["ngAnimate", "ngMaterial", "ngTouch", "ngRoute", "md.data.table", "jkAngularCarousel", "angAccordion"]);
 
 //Define routing behavior
 app.config(function($routeProvider) {
@@ -319,20 +319,6 @@ app.config(function($routeProvider) {
 			photo: "img/officers/matthew.png",
 			bio: "Matthew Pinto is the reporter of Panther Creek's TSA chapter. His favorite subjects are math and science, and he is planning to major in computer engineering. He enjoys programming, gaming, and running."
 
-		},
-
-		{
-			firstName: "Arvind",
-			lastName: "Prasad",
-			photo: "",
-			bio: ""
-		},
-
-		{
-			firstName: "Parth",
-			lastName: "Upadhyay",
-			photo: "",
-			bio: ""
 		}
 	];
 

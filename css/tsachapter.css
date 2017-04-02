@@ -18,7 +18,9 @@
 	display: flex;
 	-ms-flex-wrap: wrap;
 	    flex-wrap: wrap;
-	justify-content: center;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
 	width: 100vw;
 	margin-left: -12vw;
 	text-align: center;
